@@ -23,12 +23,12 @@ jobs:
     # Runs a single command using the runners shell
     - name: Install Node.JS
       uses: actions/setup-node@v2-beta
-      with: 
+      with:
         node-version: 12
-     - name: Install Surge
-       run: npm install --g surge
-     - name: Run Surge
-       run: surge -/ Bootcamp2020-project_01.surge.sh --token ${{secrets-SURGE_TOKEN}}       
+    - name: Install Surge
+      run: npm install --g surge
+    - name: Run Surge
+      run: surge -/ Bootcamp2020-project_01.surge.sh --token ${{secrets-SURGE_TOKEN}}       
    
 
     
